@@ -10,12 +10,12 @@ git clone https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts.git
 ```
 
 ## Install with download:
-1. ![Download Step 1](Step 1.png)
+1. ![Download Step 1](Step1.png)
 
-2. ![Download Step 2](https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts/blob/main/Step 2.png)
+![Download Step 2](https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts/blob/main2/Step2.png)
 
 3. Then move the extracted folder into `C:\<YourVaultDirectoryOrPath>\.obsidian\plugins`
 
-![Extracted Download Example](https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts/blob/main/Step 3.png)
+![Extracted Download Example](https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts/blob/main2/Step3.png)
 
 4. If that doesn't work follow the directions on the [Obsidian Help](https://help.obsidian.md/Extending+Obsidian/Community+plugins) page.
