@@ -10,7 +10,7 @@ git clone https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts.git
 ```
 
 ## Install with download:
-1. ![Download Step 1](https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts/blob/main/Step 1.png)
+1. ![Download Step 1](Step 1.png)
 
 2. ![Download Step 2](https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts/blob/main/Step 2.png)
 
