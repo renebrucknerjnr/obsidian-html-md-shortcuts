@@ -1,8 +1,485 @@
-/*
+@property --base-BG {
+  syntax: '<color>';
+  inherits: false;
+  initial-value:#1E1E1EFF:
+}
+* {
+  opacity:1;
+  transition:opacity 1s;
+  @starting-style {
+    opacity:0.5;
+  }
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+hr.x, hr.X, hr#x, hr#X {
+  border-color:#333;
+  border-width:2px;
+  height:1px;
+  animation: hrAnim 7s linear 0.3s infinite alternate;
+}
+hr.x:hover, hr.X:hover, hr#x:hover, hr#X:hover {
+  border-radius:50%;
+}
 
-If your plugin does not need CSS, delete this file.
+.glow {
+  color:#DDD;
+  background:transparent;
+  animation: shine 3s ease-in-out 0s infinite alternate;
+  filter: saturate(150%) contrast(120%);
+}
+.dance {
+  display:inline-block;
+  animation: move 3s linear 0s infinite alternate;
+}
+.fade {
+  animation: fady 1s ease 0s infinite alternate;
+}
+.lined {
+  text-decoration:2px solid underline #DDD;
+}
+.lined:not(.R):not(.O):not(.Y):not(.L):not(.G):not(.U):not(.A):not(.Z):not(.B):not(.V):not(.F):not(.M):not(.W):not(.K):not(.WK):not(.KW), .lined.X {
+  animation: liney 4s linear 0s infinite;
+}
+.lined.R {
+  text-decoration-color:#FF5252;
+}
+.lined.O {
+  text-decoration-color:#FFA852;
+}
+.lined.Y {
+  text-decoration-color:#FFFF52;
+}
+.lined.L {
+  text-decoration-color:#A8FF52;
+}
+.lined.G {
+  text-decoration-color:#52FF52;
+}
+.lined.U {
+  text-decoration-color:#52FFA8;
+}
+.lined.A {
+  text-decoration-color:#52FFFF;
+}
+.lined.Z {
+  text-decoration-color:#52A8FF;
+}
+.lined.B {
+  text-decoration-color:#5252FF;
+}
+.lined.V {
+  text-decoration-color:#A852FF;
+}
+.lined.F {
+  text-decoration-color:#FF52FF;
+}
+.lined.M {
+  text-decoration-color:#FF52A8;
+}
+.lined.W {
+  text-decoration-color:#FFFFFF;
+}
+.lined.K {
+  text-decoration-color:#000000;
+}
+.lined.W.K, .lined.WK, .lined.KW {
+  text-decoration-color:#7F7F7F;
+}
 
-*/
+.bounce {
+  display:inline-block;
+  animation: bouncy 5s ease-in-out 4s infinite;
+}
+.highlight {
+  display:inline;
+  background:repeating-linear-gradient(to bottom right, #FF00007F 10%, #D110107F 17%, #F160407F 20%);
+  padding:0.05em 0.3em 0.15em 0.25em;
+  border-radius:0.5em 20% 0.5em 20%;
+  transition:filter 1s, border-radius 1s;
+}
+.highlight:hover {
+  border-radius:20% 0.5em 20% 0.5em;
+}
+.highlight:not(.R):not(.O):not(.Y):not(.L):not(.G):not(.U):not(.A):not(.Z):not(.B):not(.V):not(.F):not(.M):not(.W):not(.K):not(.WK):not(.KW):not(.X) {
+  display:inherit;
+  background:inherit;
+  padding:inherit;
+  border-radius:inherit;
+  transition:inherit;
+}
+
+.highlight.R {
+  filter:hue-rotate(0deg);
+}
+.highlight.R:hover {
+  filter:hue-rotate(360deg);
+}
+.highlight.O {
+  filter:hue-rotate(30deg);
+}
+.highlight.O:hover {
+  filter:hue-rotate(390deg);
+}
+.highlight.Y {
+  filter:hue-rotate(60deg);
+}
+.highlight.Y:hover {
+  filter:hue-rotate(420deg);
+}
+.highlight.L {
+  filter:hue-rotate(90deg);
+}
+.highlight.L:hover {
+  filter:hue-rotate(450deg);
+}
+.highlight.G {
+  filter:hue-rotate(120deg);
+}
+.highlight.G:hover {
+  filter:hue-rotate(480deg);
+}
+.highlight.U {
+  filter:hue-rotate(150deg);
+}
+.highlight.U:hover {
+  filter:hue-rotate(510deg);
+}
+.highlight.A {
+  filter:hue-rotate(180deg);
+}
+.highlight.A:hover {
+  filter:hue-rotate(540deg);
+}
+.highlight.Z {
+  filter:hue-rotate(210deg);
+}
+.highlight.Z:hover {
+  filter:hue-rotate(570deg);
+}
+.highlight.B {
+  filter:hue-rotate(240deg);
+}
+.highlight.B:hover {
+  filter:hue-rotate(600deg);
+}
+.highlight.V {
+  filter:hue-rotate(270deg);
+}
+.highlight.V:hover {
+  filter:hue-rotate(630deg);
+}
+.highlight.F {
+  filter:hue-rotate(300deg);
+}
+.highlight.F:hover {
+  filter:hue-rotate(660deg);
+}
+.highlight.M {
+  filter:hue-rotate(330deg);
+}
+.highlight.M:hover {
+  filter:hue-rotate(690deg);
+}
+.highlight.W {
+  background:repeating-linear-gradient(to bottom right, #FFFFFF7F 10%, #EEEEEE7F 17%, #F1F1F17F 20%);
+}
+.highlight.K {
+  background:repeating-linear-gradient(to bottom right, #0000007F 10%, #1111117F 17%, #0101017F 20%);
+}
+.highlight.W.K, .highlight.WK, .highlight.KW {
+  background:repeating-linear-gradient(to bottom right, #7F7F7F7F 10%, #8181817F 17%, #7A7A7A7F 20%);
+}
+.highlight.X {
+  animation: rainbowLight 10s linear 0s infinite normal forwards;
+}
+.highlight.X:hover {
+  animation-play-state: paused;
+}
+
+.cR {
+  color:#FF5252;
+}
+.cO {
+  color:#FFA852;
+}
+.cY {
+  color:#FFFF52;
+}
+.cL {
+  color:#A8FF52;
+}
+.cG {
+  color:#52FF52;
+}
+.cU {
+  color:#52FFA8;
+}
+.cA {
+  color:#52FFFF;
+}
+.cZ {
+  color:#52A8FF;
+}
+.cB {
+  color:#5252FF;
+}
+.cV {
+  color:#A852FF;
+}
+.cF {
+  color:#FF52FF;
+}
+.cM {
+  color:#FF52A8;
+}
+.cW {
+  color:#FFFFFF;
+}
+.cK {
+  color:#000000;
+}
+.cW.cK, .cWK, .cKW {
+  color:#7F7F7F;
+}
+.cX {
+  animation: rainbowCol 10s linear 0s infinite;
+}
+.cX:hover {
+  animation-play-state: paused;
+}
+
+.keepColor {
+  color:inherit!important;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup */
+.popUp {
+  text-decoration: underline 2px dashed #999;
+  text-underline-offset:0.1em;
+  margin-bottom:0.1em;
+  font-style:italic;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  & > .popTxt {
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    bottom:125%;
+    left:50%;
+    width:15em;
+    text-align:center;
+    z-index:1;
+    background:linear-gradient(to bottom right, #444444EF 10%, #1F1F1FAF 30%, #333333EE 50%);
+    padding:0.4em;
+    border:2px dotted gray;
+    border-radius:0.6em 0.6em 30% 30%;
+    transition:opacity 1s ease-out, visibility 1s ease-out;
+    transition-behavior: allow-discrete;
+    margin-left:-7.5em;
+    &[hidden], dialog:not(:modal), &[popover]:not(:popover-open) {
+      opacity: 1;
+      visibility:hidden;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+    }
+  }
+  & > .popTxt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -0.5em;
+    border-width: 0.5em;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent; transparent transparent red;
+  }
+  &:hover > .popTxt {
+    visibility:visible;
+    opacity:1;
+    transition:opacity 0.3s ease-in, visibility 0.3s ease-in;
+  }
+}
+.norSty {
+  font-style:normal;
+  text-decoration:none;
+  text-align:left;
+}
+
+.boxR {
+  border:2px solid #FF5252;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxO {
+  border:2px solid #FFA852;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxY {
+  border:2px solid #FFFF52;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxL {
+  border:2px solid #A8FF52;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxG {
+  border:2px solid #52FF52;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxU {
+  border:2px solid #52FFA8;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxA {
+  border:2px solid #52FFFF;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxZ {
+  border:2px solid #52A8FF;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxB {
+  border:2px solid #5252FF;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxV {
+  border:2px solid #A852FF;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxF {
+  border:2px solid #FF52FF;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxM {
+  border:2px solid #FF52A8;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxW {
+  border:2px solid #FFFFFF;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxK {
+  border:2px solid #000000;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxWK, .boxKW, .boxW.boxK {
+  border:2px solid #7F7F7F;
+  padding:0px 2px 0px 2px;
+/*  border-radius:5px;*/
+}
+.boxX {
+  border:2px solid #7F7F7F;
+  padding:0px 2px 0px 2px;
+/*  border-radius: 5px;*/
+  animation: rainBox 10s linear 0s infinite
+}
+
+.help, #help {
+  counter-increment: cI;
+  display:inline-block;
+}
+/* ROYLGUAZBVFM */
+/* ABCDEFGHIJKL */
+.help::after, #help::after {
+  content:"List of classes (" counter(cI) "): glow, dance, fade, lined ROYLGUAZBVFMWK, bounce, highlight ROYLGUAZBVFMWKX, c+ROYLGUAZBVFMWKX, popUp > popTxt, keepColor, norSty, box+ROYLGUAZBVFMWK, help.";
+  color:#D75;
+}
+
+@keyframes hrAnim {
+  0% {border-color:#333333;}
+  7% {border-color:#373333;}
+  14% {border-color:#433333;}
+  21% {border-color:#433733;}
+  28% {border-color:#434333;}
+  35% {border-color:#374333;}
+  42% {border-color:#334333;}
+  49% {border-color:#334337;}
+  56% {border-color:#334343;}
+  63% {border-color:#333743;}
+  70% {border-color:#333343;}
+  77% {border-color:#373343;}
+  84% {border-color:#433343;}
+  91% {border-color:#433337;}
+  100% {border-color:#373737;}
+}
+@keyframes shine {
+  0% {text-shadow:0 0 0.5ch #BBD;filter:brightness(90%);}
+  100% {text-shadow:0 0 1ch #CFF, 2px 0 1ch #BBF, 0 4px 1ch #BFB;filter:brightness(110%);}
+}
+@keyframes move {
+  0% {transform:rotate(-5deg) scale(0.95) skewY(-5deg);}
+  50% {transform:scale(1) skewY(0deg);}
+  100% {transform:rotate(5deg) scale(0.95) skewY(5deg);}
+}
+@keyframes fady {
+  from {opacity:100%;}
+  to {opacity:10%;}
+}
+@keyframes liney {
+  0% {text-decoration:2px solid underline #D55;}
+  17% {text-decoration:2px solid underline #DD5;}
+  33% {text-decoration:2px solid underline #5D5;}
+  50% {text-decoration:2px solid underline #5DD;}
+  67% {text-decoration:2px solid underline #55D;}
+  83% {text-decoration:2px solid underline #D5D;}
+  100% {text-decoration:2px solid underline #D55;}
+}
+@keyframes bouncy {
+  0% {transform: translateY(0);}
+  2.5% {transform: translateY(-100%);}
+  10% {transform: translateY(0);}
+  15% {transform: translateY(-50%);}
+  17.5% {transform: translateY(0);}
+  18.75% {transform: translateY(-25%);}
+  19.38% {transform: translateY(0);}
+  19.69% {transform: translateY(-5%);}
+  20% {transform: translateY(0);}
+  100% {transform: translateY(0);}
+}
+@keyframes rainbowLight {
+  0% {filter:hue-rotate(0deg);}
+  100% {filter:hue-rotate(360deg);}
+}
+@keyframes rainbowCol {
+  0% {color:#FF5252;}
+  9.1% {color:#FFA852;}
+  18.2% {color:#FFFF52;}
+  27.3% {color:#A8FF52;}
+  36.4% {color:#52FF52;}
+  45.5% {color:#52FFA8;}
+  54.5% {color:#52FFFF;}
+  63.6% {color:#52A8FF;}
+  72.7% {color:#5252FF;}
+  81.8% {color:#A852FF;}
+  90.9% {color:#FF52FF;}
+  100.0% {color:#FF52A8;}
+}
+@keyframes rainBox {
+  0% {border-color:#FF5252;}
+  9.1% {border-color:#FFA852;}
+  18.2% {border-color:#FFFF52;}
+  27.3% {border-color:#A8FF52;}
+  36.4% {border-color:#52FF52;}
+  45.5% {border-color:#52FFA8;}
+  54.5% {border-color:#52FFFF;}
+  63.6% {border-color:#52A8FF;}
+  72.7% {border-color:#5252FF;}
+  81.8% {border-color:#A852FF;}
+  90.9% {border-color:#FF52FF;}
+  100.0% {border-color:#FF52A8;}
+}
+
