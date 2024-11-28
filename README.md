@@ -10,7 +10,7 @@ git clone https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts.git
 ```
 
 ## Install with download:
-1. <img src="Step3.png" width="400">
+1. <img src="Step1.png" width="400">
 
 <img src="Step2.png" width="400">
 
@@ -19,3 +19,7 @@ git clone https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts.git
 <img src="Step3.png" width="400">
 
 4. If that doesn't work follow the directions on the [Obsidian Help](https://help.obsidian.md/Extending+Obsidian/Community+plugins) page.
+
+***
+
+##### You could also download the `styles.css` and use the classes with snippets and not the plugin.
