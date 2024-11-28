@@ -37,7 +37,7 @@ hr.x:hover, hr.X:hover, hr#x:hover, hr#X:hover {
 .lined {
   text-decoration:2px solid underline #DDD;
 }
-.lined:not(.R):not(.O):not(.Y):not(.L):not(.G):not(.U):not(.A):not(.Z):not(.B):not(.V):not(.F):not(.M):not(.W):not(.K):not(.WK):not(.KW), .lined.X {
+.lined.X {
   animation: liney 4s linear 0s infinite;
 }
 .lined.R {

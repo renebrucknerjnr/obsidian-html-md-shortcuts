@@ -3,6 +3,9 @@
 Adds <span style="color:#D05050;background:#1E1E1E;">HTML</span> markdown with CSS snippets, as well as shortcuts for them.
 
 ![Example](Example.png)
+
+<video src="popUpTxtExample.mp4" width="350" muted loop autoplay>&lt;video&gt; not supported</video>
+
 > Use `<i id="help"></I>` to get a list of useable classes.
 
 ## Install through terminal:
