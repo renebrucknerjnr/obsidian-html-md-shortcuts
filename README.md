@@ -10,12 +10,12 @@ git clone https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts.git
 ```
 
 ## Install with download:
-1. ![Download Step 1](Step1.png|100)
+1. <img src="Step3.png" width="400">
 
-![Download Step 2](Step2.png)
+<img src="Step2.png" width="400">
 
 3. Then move the extracted folder into `C:\<YourVaultDirectoryOrPath>\.obsidian\plugins`
 
-<img src="Step3.png" width="100">
+<img src="Step3.png" width="400">
 
 4. If that doesn't work follow the directions on the [Obsidian Help](https://help.obsidian.md/Extending+Obsidian/Community+plugins) page.
