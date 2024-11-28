@@ -1,11 +1,11 @@
 {
-	"id": "html-markdown-sc",
-	"name": "HTML Markdown Shortcuts",
+	"id": "html-markdown-shortcuts",
+	"name": "HTML MD SC",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Adds HTML markdown with CSS snippets, as well as shortcuts for them.",
-	"author": "Birene",
-	"authorUrl": "",
+	"author": "renebrucknerjnr",
+	"authorUrl": "https://github.com/renebrucknerjnr",
 	"fundingUrl": "",
 	"isDesktopOnly": false
 }

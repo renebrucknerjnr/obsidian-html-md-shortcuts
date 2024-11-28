@@ -263,6 +263,7 @@ export default class htmlMdScPlugin extends Plugin {
 		this.addCommand({
 			id: 'assistance',
 			name: 'Help',
+			hotkeys: [{modifiers: ['Mod', 'Alt', 'Shift'], key: 'h'}],
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				const selection = editor.getSelection();
 				editor.replaceSelection('<center id="help">'+selection+'</center>.');

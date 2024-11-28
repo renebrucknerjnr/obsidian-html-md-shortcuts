@@ -1,6 +1,9 @@
-# Obsidian HTML Markdown Shortcuts
+# Obsidian HTML Markdown Shortcuts (HTML-MD-SC)
 
 Adds <span style="color:#D05050;background:#1E1E1E;">HTML</span> markdown with CSS snippets, as well as shortcuts for them.
+
+![Example](Example.png)
+> Use `<i id="help"></I>` to get a list of useable classes.
 
 ## Install through terminal:
 
@@ -12,7 +15,7 @@ git clone https://github.com/renebrucknerjnr/obsidian-html-md-shortcuts.git
 ## Install with download:
 1. <img src="Step1.png" width="400">
 
-<img src="Step2.png" width="400">
+2. <img src="Step2.png" width="400">
 
 3. Then move the extracted folder into `C:\<YourVaultDirectoryOrPath>\.obsidian\plugins`
 
