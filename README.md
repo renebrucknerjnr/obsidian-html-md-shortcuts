@@ -7,7 +7,8 @@ Adds <span style="color:#D05050;background:#1E1E1E;">HTML</span> markdown with C
 <video src="popUpTxtExample.mp4" width="350" muted loop autoplay>&lt;video&gt; not supported</video>
 
 > Use `<i id="help"></i>` to get a list of useable classes.
-> Use the `demo` command to get a demonstration of tge plugin.
+
+> Use the `demo` command to get a demonstration of the plugin.
 
 ## Install through terminal:
 
